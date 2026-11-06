@@ -1,67 +1,37 @@
-Maze Traversal Simulator (DFS and BFS)
+# 🌀 Maze Traversal Simulator (DFS & BFS)
 
-Overview
+A console-based C++ application that visualizes the **Depth-First Search (DFS)** and **Breadth-First Search (BFS)** graph traversal algorithms solving a dynamically generated 25x25 maze in real-time. Designed specifically for Windows, it features custom console coloring, animated cursor positioning, and background audio playback.
 
-This is a console-based $\text{C++}$ application that visualizes the Depth First Search (DFS) and Breadth-First Search (BFS) algorithms solving a dynamically generated 25x25 maze in real-time. The application requires Windows to function, as it uses specific headers (windows.h, MMsystem.h) for colored text, animated cursor positioning, and background music playback.
+---
 
-Features
+## ✨ Features
+* **Real-Time Visualization:** Watch the algorithm step-by-step navigate through the maze ('X').
+* **Algorithm Comparison:** Easily switch between DFS (Stack-based) and BFS (Queue-based) approaches.
+* **Dynamic Generation:** A fresh, unique maze is procedurally generated for every run.
+* **Visual Styling:** Color-coded console UI distinguishing walls, explored paths, and the green Exit ('E').
+* **Multimedia Integration:** Atmospheric background music playback during execution.
 
-This program offers real-time visualization of mouse traversal ('X') using either DFS (Stack-based) or BFS (Queue-based). A new maze is generated for every run, and custom console colors are used to distinguish the walls, explored paths, and the green Exit ('E').
+---
 
-Prerequisites
+## 🛠️ Prerequisites & Requirements
+To compile and run this project, ensure you have:
+* **C++ Compiler:** GCC (via MinGW or Cygwin) recommended.
+* **Operating System:** Windows OS (required for native console and multimedia headers like `windows.h` and `MMsystem.h`).
+* **Audio File:** Ensure `Undertale OST - 059 Spider Dance.wav` is placed in the same directory as the executable.
 
-To compile and run this program, you need:
+---
 
-A C++ Compiler: $\text{GCC}$ (via MinGW or Cygwin) is recommended.
+## 🚀 How to Run & Build
 
-Windows Operating System: Required for the console and multimedia functions.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Terminator-maker/Maze-traversal-using-breadth-first-and-depth-first-search.git](https://github.com/Terminator-maker/Maze-traversal-using-breadth-first-and-depth-first-search.git)
+   cd Maze-traversal-using-breadth-first-and-depth-first-search
+Compile the code:(Note: The -lwinmm flag is critical to link the Windows Multimedia library for sound playback)
 
-Audio File: The file Undertale OST - 059 Spider Dance.wav must be located in the same directory as the executable (main.exe).
-
-Building the Project
-
-The Windows Multimedia library must be linked during compilation.
-
-Compilation Command
-
-Use the following command, ensuring you include the -lwinmm flag:
-
+Bash
 g++ main.cpp -o main.exe -lwinmm
+Run the executable:
 
-
-Component
-
-Description
-
-g++
-
-The $\text{C++}$ compiler.
-
-main.cpp
-
-The primary source code file.
-
--o main.exe
-
-Specifies the output filename as main.exe.
-
--lwinmm
-
-CRITICAL: Links the Windows Multimedia library (required for PlaySound).
-
-Running the Executable
-
-Ensure the .wav file is present, then execute the program directly in $\text{CMD}$ or $\text{PowerShell}$:
-
+Bash
 .\main.exe
-
-
-Program Controls
-
-Select 1 for DFS (Stack) or 2 for BFS (Queue).
-
-The visualization starts immediately.
-
-Press any key after the "escaped the Maze!" message to return to the menu.
-
-Select 3 to exit.
