@@ -35,3 +35,11 @@ Run the executable:
 
 Bash
 .\main.exe
+🎮 Program Controls
+Option 1: Run DFS (Stack-based traversal)
+
+Option 2: Run BFS (Queue-based traversal)
+
+Option 3: Exit application
+
+Note: After the "escaped the Maze!" message appears, press any key to return to the main menu.
